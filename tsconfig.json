@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": false,
+    "outFile": "./dist/main.js"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
