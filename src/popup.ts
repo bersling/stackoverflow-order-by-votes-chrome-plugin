@@ -2,6 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+declare var chrome;
+
 /**
  * Get the current URL.
  *
@@ -101,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       renderStatus('Search term: ' + url + '\n' +
           'Google image search result: ' + imageUrl);
-      var imageResult = document.getElementById('image-result');
+      var imageResult: any = document.getElementById('image-result');
       // Explicitly set the width/height to minimize the number of reflows. For
       // a single image, this does not matter, but if you're going to embed
       // multiple external images in your page, then the absence of width/height
