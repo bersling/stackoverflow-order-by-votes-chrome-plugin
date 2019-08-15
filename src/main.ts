@@ -9,7 +9,7 @@ window.onload = function() {
   for (let i = 0; i < answers.length; i++) {
     const answer = answers.item(i);
     originalAnswers.push(answer);
-    const voteCountHtml = answer.getElementsByClassName('vote-count-post');
+    const voteCountHtml = answer.getElementsByClassName('js-vote-count');
     const voteCount = parseInt(voteCountHtml.item(0).innerHTML);
     extendedAnswers.push({
       answer: answer,
