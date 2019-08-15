@@ -5,7 +5,7 @@ window.onload = function () {
     var extendedAnswers = [];
     for (var i = 0; i < answers.length; i++) {
         var answer = answers.item(i);
-        var voteCountHtml = answer.getElementsByClassName('vote-count-post');
+        var voteCountHtml = answer.getElementsByClassName('js-vote-count');
         var voteCount = parseInt(voteCountHtml.item(0).innerHTML);
         extendedAnswers.push({
             answer: answer,
